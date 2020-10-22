@@ -1,0 +1,90 @@
+<div class="rem-card-btn"> <button (click)="removeCard()">Remove card</button></div>
+<div *ngFor="let product of products | paginate: { itemsPerPage: 4, currentPage: p }">
+  <!-- <div *ngFor="let item of attributes | paginate: { itemsPerPage: 4, currentPage: p }"> -->
+  <br>
+
+<div class="card">
+    <div class="card-det"><img src="{{product.image}}" alt="" class="prod-image"></div>
+    <div class="card-det2">
+
+        <table class="card-data">
+
+            <tr>
+                <td colspan="3" class="prd-name">{{product.productName}}</td>
+                <td><a href="#" class="remproduct" (click)="deleteUser(product)" *ngIf="flag">Remove product</a></td>
+              </tr>
+            <tr>
+              <td>Material </td>
+              <td>{{product.attributes.Material}}</td>
+              <td></td>
+              <td><button class="cardbtns"><i class="fa fa-heart-o" aria-hidden="true"></i>Add to favorite</button></td>
+            </tr>
+
+            <tr>
+                <td>Color </td>
+                <td>{{product.attributes.Color}}</td>
+                <td></td>
+                <td><button class="cardbtns"><i class="fa fa-compress" aria-hidden="true"></i>Add to compare</button></td>
+              </tr>
+
+              <tr>
+                <td>Brand</td>
+                <td>{{product.attributes.Brand}}</td>
+                <td>Usually {{product.deliveryTime}}</td>
+                <td><button class="cardbtns"><i class="fa fa-bars" aria-hidden="true"></i>Shortlist product</button></td>
+              </tr>
+
+              
+              <tr>
+                
+                <td colspan="2">{{product.minOrders}} pieces  (Min. Order)</td>
+                <td>
+                  
+                  <span class="fa fa-star checked" *ngFor="let item of product.noi"></span>
+                   
+                   
+                </td>
+                <td><button class="cardbtns"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add to cart</button></td>
+              </tr>
+            
+              <tr>
+                
+                <td colspan="2">{{product.location}}</td>
+                <td>₹ {{product.productPrice}} / piece</td>
+                <td><button class="cardbtns"><i class="fa fa-whatsapp" aria-hidden="true"></i>Contact seller</button></td>
+              </tr>
+         
+          </table>
+     
+    </div>
+   
+    
+  </div>
+
+</div>
+
+  <br>
+  <div style="text-align: center;">
+  <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+ </div>
+  
+  <!-- <br>
+  
+  <div class="card">
+    <div class="card-det"><img src="https://i.postimg.cc/26gGRvgR/photo-1505691938895-1758d7feb511.jpg" alt="Denim Jeans" style="width:100%"></div>
+    <div class="card-det">
+        <a href="#">Remove card</a>
+      <p class="price">$19.99</p>
+      <p>Some text about the jeans..</p>
+      <p>
+        <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+      </p>
+      <p><button>Add to Cart</button></p>
+    </div>
+   
+    
+  </div> -->

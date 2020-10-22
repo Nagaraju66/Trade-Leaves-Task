@@ -1,0 +1,109 @@
+
+<div class="header">
+    <a href="#default" class="logo"><img src="../assets/TL-Logo.png"></a>
+    <div class="header-right">
+      <a class="active" href="#home">Place an Ad</a>
+      <a href="#contact" >Buyer Inquiries</a>
+      <a href="#about">Support</a>
+      <a><i class="fa fa-user" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  
+  <div class="bg" [ngStyle]="{backgroundImage:'url(../assets/banner.png)'}" >
+  
+    <div class="caption">
+       <span class="banner-header">Suyog Enterprises</span>
+        <br>
+        <span class="banner-subheader">Verified Supplier</span>
+    
+     
+    </div>
+  
+  </div>
+  <br>
+
+    <app-product></app-product>
+  
+  
+  <br>
+  <div class="curdbtns">
+   <div>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button add-cards-btn" >Add Card</button>
+   </div> 
+   
+  </div>
+  
+
+  <div class="footer">
+    <p class="copy-right"> ©All rights reserved Trade Leaves 2020</p>
+    <p class="design-dev">Designed & Developer by <img src="../assets/TL-Logo.png"></p>
+  </div>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      
+      <div class="w3-container">
+        
+        <div class="card">
+     
+          <form #userForm="ngForm" >
+
+          <div class="card-det fileupload">
+           <input type="text" class="upload-image" name="image" ngModel placeholder="Enter image url">
+          </div>
+          <div class="card-det">
+          
+            <table class="add-card-data">
+              <tr>                
+                <td colspan="3" ><input type="text" style="width:100%" name="productName" ngModel placeholder="Product Name"></td>              
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="text" 
+                  value="Material" readonly></td>
+                <td><input type="text" name="Material" ngModel></td>
+                <td></td>
+                <td></td>
+              </tr>
+  
+              <tr>
+                <td><input type="text" value="Color" readonly></td>
+                <td><input type="text" name="Color" ngModel></td>
+                <td></td>
+                <td></td>
+              </tr>
+  
+              <tr>
+                <td><input type="text" value="Brand" readonly></td>
+                <td><input type="text" name="Brand" ngModel></td>
+                <td><input type="text" name="deliveryTime" ngModel placeholder="Delivery Time"></td>
+                <td></td>
+              </tr>
+  
+              <tr>                
+                <td colspan="2"><input type="text" name="minOrders" ngModel placeholder="pieces (min order)" style="width: 75%;"></td>
+                <td><input type="text" name="productRating" ngModel placeholder="Product Rating"></td>
+                <td></td>
+              </tr>
+  
+              <tr>                
+                <td colspan="2"><input type="text" name="location" ngModel placeholder="location" style="width: 75%;"></td>
+                <td><input type="text" name="productPrice" ngModel placeholder="Product Price"></td>
+                <td><button type="button" class="updateclsbtn" (click)="addUser(userForm)" onclick="document.getElementById('id01').style.display='none'" >Update and close</button></td>
+              </tr>
+           
+            </table>
+
+           </div>
+        </form>
+          
+        </div>
+  
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+      </div>
+    
+    </div>
+  </div>
+
+  

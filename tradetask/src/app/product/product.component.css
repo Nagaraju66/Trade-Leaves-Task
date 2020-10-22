@@ -1,0 +1,103 @@
+
+  .card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  max-width: 852px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius: 15px;
+  height: 216px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+
+.checked {
+  color: orange;
+}
+
+.card-det{width: 38%;display: inline-block;position: relative;
+  top:0%;
+  left: 0%;bottom: 0%;}
+  .card-det2{width: 62%;display: inline-block;position: relative;
+    top:0%;
+    left: 1%;bottom: 0%;}
+  .cardbtns{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    color: #0E8543;
+    border: 1px solid #0E8543;
+    padding: 0px 18px;
+    text-align: left;
+    font-size: 12px;
+    width: 94%;
+}
+.cardbtns:focus{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    color: #0E8543;
+    border: 1px solid #0E8543;
+    outline: 0;
+}
+.remproduct{font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;    
+    color: #DE4F60;
+    text-decoration: none;
+}
+    .remproduct:hover{
+     border-bottom: 2px solid #18a0fb;
+    }
+.card-data tr td{
+    font-family: Overpass;
+    text-align: left;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color:#5D636F;
+    width: 217px;
+}
+.rem-card-btn{
+  margin-right: 81px;
+  float: right;
+  margin-top: 70px;
+}
+.prod-image{
+  width: 100%;
+  vertical-align: unset;
+  border-radius: 15px;
+  height: 216px;
+}
+.rem-card-btn button{
+width: 120px;
+height: 33px;
+background: rgba(222, 79, 96, 0.1);
+border: 1px solid #DE4F60;
+box-sizing: border-box;
+border-radius: 5px;
+color: #DE4F60;
+}
+.prd-name{
+  font-size: 20px !important;
+}
+
+
+
+
+
+
+
+
+
+
+   
+
+
